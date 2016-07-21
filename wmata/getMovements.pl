@@ -5,8 +5,8 @@ use Mojo::UserAgent;
 use Mojo::IOLoop;
 use Cpanel::JSON::XS;
 
-open(my $fh, "<", "api.key");
-chomp (my $api_key = readline($fh));
+
+my $api_key = "6b700f7ea9db408e9745c207da7ca827";
 my ($trains, $buses);
 my $coder = Cpanel::JSON::XS->new->ascii->allow_nonref;
 my $redis = Mojo::Redis2->new(url => "redis://localhost:6379/2");
