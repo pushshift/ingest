@@ -6,7 +6,6 @@ use warnings;
 use Redis::Fast;
 use Cpanel::JSON::XS;
 use DBI;
-use Data::Dumper;
 use Date::Parse;
 use POSIX;
 
